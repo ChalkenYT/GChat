@@ -1,0 +1,92 @@
+/* Reset styles */
+html, body, button, input, select, textarea {
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  margin-left:0;
+}
+
+/* Main styles */
+body {
+  background-color: #242424;
+  color: #fff;
+}
+
+form {
+  margin: 20px auto;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  width: 100%;
+  margin-right: 10px;
+  color: #bbb;
+}
+
+input[type="text"] {
+  flex-basis: 70%;
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 2px solid #373737;
+  border-radius: 5px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #bbb;
+  box-shadow: 0 0 5px #bbb;
+}
+
+button[type="submit"] {
+  flex-basis: 20%;
+  padding: 10px;
+  background-color: #5aa4cf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #369acc;
+}
+
+ul#form-control {
+  list-style: none;
+  padding: 10px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+ul#form-control li {
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 14px;
+  background-color: #1e1e1e;
+  border: 2px solid #373737;
+  border-radius: 5px;
+}
+
+ul#form-control li:last-child {
+  margin-bottom: 0;
+}
+
+input[type="text"].form-control {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+form button[type="submit"] {
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
